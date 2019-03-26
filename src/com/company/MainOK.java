@@ -11,10 +11,11 @@ public class MainOK {
         int decision;
 
 
-        System.out.println("Turno del player");
-        System.out.println();
 
         for (int i = 0; contando <=20 ; i++) {
+            System.out.println("Turno del player");
+            System.out.println();
+
             System.out.println(" 1,2 o 3?");
             decision= sc.nextInt();
             contando=contando+decision;
@@ -22,14 +23,15 @@ public class MainOK {
                 System.out.println("gana humano");
                 break;
             }
-            System.out.println(contando);
+            System.out.println("SUMA="+contando);
             System.out.println();
+
             System.out.println("turno maquina");
             int rand = new Random().nextInt(3)+1;
             decision= rand;
             System.out.println("decision maquina="+ decision);
             contando=contando+decision;
-            System.out.println(contando);
+            System.out.println("SUMA="+contando);
             if (contando==20){
                 System.out.println("gana maquina");
                 break;
