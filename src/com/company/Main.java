@@ -6,6 +6,9 @@ public class Main {
 
         Partida partida = new Partida();
 
+        String carta = "\uD83D\uDE17";
+        System.out.println(carta);
+
         Jugador jugador1 = new Jugador();
         Maquina jugador2 = new Maquina();
 
@@ -19,6 +22,7 @@ public class Main {
             partida.acumular(jugador1.decision);
 
             boolean acaba = partida.comprobarFin();
+
 
             if(acaba == true) break;
 
